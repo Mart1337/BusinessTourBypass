@@ -1,4 +1,4 @@
-<p align="center"><img src="[https://cdn.discordapp.com/attachments/909176514015268925/916445840514633758/K26_charPreview_portrait.png](https://play-lh.googleusercontent.com/MxoY5MHmDyPf9BWbmI1KolSZPqEsLyon5IZujG1bHjtYi7EnkRPyIpO-MTinsh5VSA)" width="150px" height="150px" alt="andromeda"></p>
+<p align="center"><img src="https://play-lh.googleusercontent.com/MxoY5MHmDyPf9BWbmI1KolSZPqEsLyon5IZujG1bHjtYi7EnkRPyIpO-MTinsh5VSA" width="150px" height="150px" alt="andromeda"></p>
 
 <h1 align="center">🎲 BUSINESS TOUR BYPASS 🎲</h1>
 
