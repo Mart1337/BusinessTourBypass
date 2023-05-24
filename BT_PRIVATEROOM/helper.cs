@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +18,8 @@ namespace BT_PRIVATEROOM
 
         public static bool ClientExecuteScript = false;
         public static int nb_request_successed = 0;
+        public static bool TournamentGold = false;
+
 
         private static void ScrapDataRequest(Session oSession)
         {
@@ -56,7 +58,21 @@ namespace BT_PRIVATEROOM
 
         private static void GameResponse(Session oSession)
         {
-        
+            if(TournamentGold == true)
+            {
+
+                if (oSession.fullUrl.Equals("https://7eaa.playfabapi.com/Client/ExecuteCloudScript?sdk=UnitySDK-2.153.221024"))
+                {
+
+                    oSession.utilDecodeResponse();
+                    WebClient wc = new WebClient();
+                    oSession.utilSetResponseBody(File.ReadAllText("tournament.json"));
+
+
+                }
+            }
+
+
             if (ClientExecuteScript == true)
             {
        
@@ -143,6 +159,17 @@ namespace BT_PRIVATEROOM
             Console.ReadLine();
 
         }
+
+        public static void BypassTournament()
+        {
+            Console.Clear();
+            Console.WriteLine("Bypassing In-App Purchase...");
+            Console.WriteLine("Please enter in tournament");
+
+            Console.ReadLine();
+
+        }
+
 
         public static void StartGame()
         {
